@@ -76,14 +76,14 @@ owner: object(User Preview)
 ## Коллекция ручных тестов в Postman
 В соответствии с майнд-картой были составлены ручные тесты.
 
-Тесты можно скачать [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI.postman_collection_For_Github.json)
+Скачать коллекцию можно [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI.postman_collection_For_Github.json)
 
 ## Коллекция авто-тестов в Postman
 Также были оформлены авто-тесты для проверки цикла GET/POST/PUT/DELETE
 
-Скачать можно [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI_Auto_Test.postman_collection_For_Github.json)
+Скачать коллекцию можно [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI_Auto_Test.postman_collection_For_Github.json)
 
 ## Окружение
 Для тестов было создано отдельное окружение. Оно обязательно для работы тестов.
 
-Окружение [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI_environment.postman_environment_For_Github.json)
+Скачать окружение [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI_environment.postman_environment_For_Github.json)
