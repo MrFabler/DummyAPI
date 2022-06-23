@@ -73,6 +73,17 @@ owner: object(User Preview)
 
 Карту можно [скачать](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPIGitHub.xmind)
 
-## Тест-кейсы
-Также были оформлены тест-кейсы в соответсвии с майнд-картой
-Тест-кейсы можно посмотреть [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI.postman_collection_For_Github.json)
+## Коллекция ручных тестов в Postman
+В соответствии с майнд-картой были составлены ручные тесты.
+
+Тесты можно скачать [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI.postman_collection_For_Github.json)
+
+## Коллекция авто-тестов в Postman
+Также были оформлены авто-тесты для проверки цикла GET/POST/PUT/DELETE
+
+Скачать можно [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI_Auto_Test.postman_collection_For_Github.json)
+
+## Окружение
+Для тестов было создано отдельное окружение. Оно обязательно для работы тестов.
+
+Окружение [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI_environment.postman_environment_For_Github.json)
