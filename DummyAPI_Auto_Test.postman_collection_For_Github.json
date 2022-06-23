@@ -1,0 +1,649 @@
+{
+	"info": {
+		"_postman_id": "c9df5579-bed4-4e87-bf15-333fb69476c2",
+		"name": "DummyAPI_Auto_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20696545"
+	},
+	"item": [
+		{
+			"name": "List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 750ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(750);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"   var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Data_List\", function () {\r",
+							"    pm.expect(jsonData.data).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_id\", function () {\r",
+							"    pm.expect(jsonData.data[0].id).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_image\", function () {\r",
+							"    pm.expect(jsonData.data[1].image).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_likes\", function () {\r",
+							"    pm.expect(jsonData.data[2].likes).to.be.a('number');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_tags\", function () {\r",
+							"    pm.expect(jsonData.data[3].tags).to.be.a('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_owner_picture\", function () {\r",
+							"    pm.expect(jsonData.data[11].owner.picture).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_[19]_undefined\", function () {\r",
+							"    pm.expect(jsonData.data[19].id).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_[20]_undefined\", function () {\r",
+							"    pm.expect(jsonData.data[20]).to.be.a('undefined');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_limit_[20]\", function () {\r",
+							"    pm.expect(jsonData.limit).to.eql(20);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List_By_User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 750ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(750);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"   var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Data_List\", function () {\r",
+							"    pm.expect(jsonData.data).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_id\", function () {\r",
+							"    pm.expect(jsonData.data[0].id).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_image\", function () {\r",
+							"    pm.expect(jsonData.data[1].image).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_likes\", function () {\r",
+							"    pm.expect(jsonData.data[2].likes).to.be.a('number');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_tags\", function () {\r",
+							"    pm.expect(jsonData.data[3].tags).to.be.a('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_owner_picture\", function () {\r",
+							"    pm.expect(jsonData.data[11].owner.picture).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_[19]_undefined\", function () {\r",
+							"    pm.expect(jsonData.data[19].id).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_[20]_undefined\", function () {\r",
+							"    pm.expect(jsonData.data[20]).to.be.a('undefined');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_limit_[20]\", function () {\r",
+							"    pm.expect(jsonData.limit).to.eql(20);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/user/60d0fe4f5311236168a109da/post",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"user",
+						"60d0fe4f5311236168a109da",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List_By_Tag",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 750ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(750);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"   var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Data_List\", function () {\r",
+							"    pm.expect(jsonData.data).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_id\", function () {\r",
+							"    pm.expect(jsonData.data[0].id).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_image\", function () {\r",
+							"    pm.expect(jsonData.data[1].image).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_likes\", function () {\r",
+							"    pm.expect(jsonData.data[2].likes).to.be.a('number');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_tags\", function () {\r",
+							"    pm.expect(jsonData.data[3].tags).to.be.a('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_owner_picture\", function () {\r",
+							"    pm.expect(jsonData.data[11].owner.picture).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_[19]_undefined\", function () {\r",
+							"    pm.expect(jsonData.data[19].id).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_[20]_undefined\", function () {\r",
+							"    pm.expect(jsonData.data[20]).to.be.a('undefined');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Data_limit_[20]\", function () {\r",
+							"    pm.expect(jsonData.limit).to.eql(20);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/tag/food/post",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"tag",
+						"food",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 750ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(750);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"   var jsonData = pm.response.json();\r",
+							"   console.log(jsonData);\r",
+							"\r",
+							"pm.collectionVariables.set(\"postID\", jsonData.id);\r",
+							"    \r",
+							"\r",
+							"pm.test(\"Image\", function () {\r",
+							"    pm.expect(jsonData.image).to.eql(\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Spaghetti_bolognese_%28hozinja%29.jpg/220px-Spaghetti_bolognese_%28hozinja%29.jpg\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Likes\", function () {\r",
+							"    pm.expect(jsonData.likes).to.be.at.least(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tags\", function () {\r",
+							"    pm.expect(jsonData.tags).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tags_Deep\", function () {\r",
+							"    pm.expect(jsonData.tags).to.be.an('array').that.include(\"food\",\"spaghetti\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Text\", function () {\r",
+							"    pm.expect(jsonData.text).to.eql(\"Me gusta spaget yes yes\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Publish_Date\", function () {\r",
+							"    pm.expect(jsonData.publishDate).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Updated_Date\", function () {\r",
+							"    pm.expect(jsonData.updatedDate).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner\", function () {\r",
+							"    pm.expect(jsonData.owner).to.be.a('object');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_ID\", function () {\r",
+							"    pm.expect(jsonData.owner.id).to.eql(\"60d0fe4f5311236168a109da\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_title\", function () {\r",
+							"    pm.expect(jsonData.owner.title).to.eql(\"mr\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_firstName\", function () {\r",
+							"    pm.expect(jsonData.owner.firstName).to.eql(\"Lance\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_lastName\", function () {\r",
+							"    pm.expect(jsonData.owner.lastName).to.eql(\"Foster\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_picture\", function () {\r",
+							"    pm.expect(jsonData.owner.picture).to.eql(\"https://randomuser.me/api/portraits/med/men/13.jpg\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Me gusta spaget yes yes\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Spaghetti_bolognese_%28hozinja%29.jpg/220px-Spaghetti_bolognese_%28hozinja%29.jpg\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"food\",\r\n        \"spaghetti\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a109da\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_By_ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 750ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(750);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"   var jsonData = pm.response.json();\r",
+							"   console.log(jsonData);\r",
+							"\r",
+							"pm.collectionVariables.get(\"postID\", jsonData.id);\r",
+							"    \r",
+							"\r",
+							"pm.test(\"Image\", function () {\r",
+							"    pm.expect(jsonData.image).to.eql(\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Spaghetti_bolognese_%28hozinja%29.jpg/220px-Spaghetti_bolognese_%28hozinja%29.jpg\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Likes\", function () {\r",
+							"    pm.expect(jsonData.likes).to.be.at.least(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tags\", function () {\r",
+							"    pm.expect(jsonData.tags).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tags_Deep\", function () {\r",
+							"    pm.expect(jsonData.tags).to.be.an('array').that.include(\"food\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Text\", function () {\r",
+							"    pm.expect(jsonData.text).to.eql(\"Me gusta spaget yes yes\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Publish_Date\", function () {\r",
+							"    pm.expect(jsonData.publishDate).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Updated_Date\", function () {\r",
+							"    pm.expect(jsonData.updatedDate).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner\", function () {\r",
+							"    pm.expect(jsonData.owner).to.be.a('object');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_ID\", function () {\r",
+							"    pm.expect(jsonData.owner.id).to.eql(\"60d0fe4f5311236168a109da\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_title\", function () {\r",
+							"    pm.expect(jsonData.owner.title).to.eql(\"mr\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_firstName\", function () {\r",
+							"    pm.expect(jsonData.owner.firstName).to.eql(\"Lance\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_lastName\", function () {\r",
+							"    pm.expect(jsonData.owner.lastName).to.eql(\"Foster\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_picture\", function () {\r",
+							"    pm.expect(jsonData.owner.picture).to.eql(\"https://randomuser.me/api/portraits/med/men/13.jpg\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/{{postID}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"{{postID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 750ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(750);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"   var jsonData = pm.response.json();\r",
+							"   console.log(jsonData);\r",
+							"\r",
+							"pm.collectionVariables.get(\"postID\", jsonData.id);\r",
+							"    \r",
+							"\r",
+							"pm.test(\"Image\", function () {\r",
+							"    pm.expect(jsonData.image).to.eql(\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Spaghetti_bolognese_%28hozinja%29.jpg/220px-Spaghetti_bolognese_%28hozinja%29.jpg\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Likes\", function () {\r",
+							"    pm.expect(jsonData.likes).to.be.at.least(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tags\", function () {\r",
+							"    pm.expect(jsonData.tags).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tags_Deep\", function () {\r",
+							"    pm.expect(jsonData.tags).to.be.an('array').that.include(\"food\",\"cheese\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Text\", function () {\r",
+							"    pm.expect(jsonData.text).to.eql(\"Me no gusta spaget\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Publish_Date\", function () {\r",
+							"    pm.expect(jsonData.publishDate).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Updated_Date\", function () {\r",
+							"    pm.expect(jsonData.updatedDate).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner\", function () {\r",
+							"    pm.expect(jsonData.owner).to.be.a('object');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_ID\", function () {\r",
+							"    pm.expect(jsonData.owner.id).to.eql(\"60d0fe4f5311236168a109da\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_title\", function () {\r",
+							"    pm.expect(jsonData.owner.title).to.eql(\"mr\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_firstName\", function () {\r",
+							"    pm.expect(jsonData.owner.firstName).to.eql(\"Lance\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_lastName\", function () {\r",
+							"    pm.expect(jsonData.owner.lastName).to.eql(\"Foster\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Owner_picture\", function () {\r",
+							"    pm.expect(jsonData.owner.picture).to.eql(\"https://randomuser.me/api/portraits/med/men/13.jpg\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"text\": \"Me no gusta spaget\",\r\n\"tags\": [\r\n        \"food\",\r\n        \"cheese\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/{{postID}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"{{postID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 750ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(750);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.collectionVariables.get(\"postID\");\r",
+							"\r",
+							"pm.test(\"postID\", function () {\r",
+							"    pm.expect(jsonData.id).to.eql(pm.collectionVariables.get(\"postID\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/{{postID}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"{{postID}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{app-id}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "postID",
+			"value": ""
+		}
+	]
+}

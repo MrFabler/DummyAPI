@@ -1,0 +1,1336 @@
+{
+	"info": {
+		"_postman_id": "e60e6d9b-339d-4c8c-8900-2e2bfc481eb3",
+		"name": "DummyAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20696545"
+	},
+	"item": [
+		{
+			"name": "Post_Positive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Negative",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Page_No_Param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?page",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Page_0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?page=0",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Page_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?page=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Page_999",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?page=999",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Page_1000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?page=1000",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Page_Latin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?page=givePage",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Limit_No_Param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?limit",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Limit_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?limit=4",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Limit_5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?limit=5",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Limit_50",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?limit=50",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Limit_51",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?limit=51",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "51"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Limit_Latin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?limit=set_limit",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "set_limit"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Created_0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?created=0",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "51",
+							"disabled": true
+						},
+						{
+							"key": "created",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Created_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?created=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "51",
+							"disabled": true
+						},
+						{
+							"key": "created",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Created_No_Param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?created=",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "51",
+							"disabled": true
+						},
+						{
+							"key": "created",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Created_Latin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post?created=create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "givePage",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "51",
+							"disabled": true
+						},
+						{
+							"key": "created",
+							"value": "create"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Positive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Me gusta Corgi\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 50,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Negative",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Me gusta Corgi\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 50,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/creat",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"creat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_With_ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 12345,\r\n    \"text\": \"Me gusta Corgi_With ID test\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 45,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_NO_ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"\",\r\n    \"text\": \"Me gusta Corgi_Without ID test\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 45,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"12345\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 24,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"qwerty\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 24,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_50",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget I love spaget I love spaget I love!!\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 24,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_51",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget I love spaget I love spaget I love!!1\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_Array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": [\r\n        \"i\",\r\n        \"love\",\r\n        \"spaget\"\r\n    ],\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_Boolean_True",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": true,\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_Boolean_False",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": false,\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Text_Object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": {},\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Image_Bad_URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-Bad ULR\",\r\n    \"image\": \"upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Image_No_URL Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-No ULR\",\r\n    \"image\": \"\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Image_Good_URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-Good URL\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_0_Likes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-0 likes\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 0,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_69_Likes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-69 likes\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 69,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Likes_Empty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-empty likes\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Tags_0",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-0 tags\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"tags\": [],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Tags_Empty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-0 tags\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Tags_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-1 tag\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"tags\": [\r\n        \"animal\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Tags_Object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-empty likes\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"tags\": {},\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Tags_Boolean_True",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-empty likes\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"tags\": true,\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Tags_Boolean_False",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-empty likes\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"tags\": false,\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_With_Correct_Owner_ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-correct ID\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 0,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a10a0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_With_Incorrect_Owner_ID Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-correct ID\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 0,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ],\r\n    \"owner\": \"60d0fe4f5311236168a1b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Create_Without_Owner_ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I love spaget-no ID\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/f/fb/Welchcorgipembroke.JPG\",\r\n    \"likes\": 0,\r\n    \"tags\": [\r\n        \"animal\",\r\n        \"dog\",\r\n        \"welsh corgi\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Delete_Valid_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/62a7127c6daa980d7bc49779",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"62a7127c6daa980d7bc49779"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Delete_Invalid_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/{{API-V}}/post/12345678990",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{API-V}}",
+						"post",
+						"12345678990"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{app-id}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
