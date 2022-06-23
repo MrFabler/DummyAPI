@@ -70,4 +70,9 @@ owner: object(User Preview)
 
 ## Майнд-карта
 Данная майнд-карта представляет собой набор тестов для тестирования объекта **POST**. Подробная проверка расписана для **Get List**, **Create Post**, **Update Post**, **Delete Post**
-![Майнд-Карта](https://flic.kr/p/2ntUUdV "Майнд-Карта")
+
+Карту можно [скачать](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPIGitHub.xmind)
+
+## Тест-кейсы
+Также были оформлены тест-кейсы в соответсвии с майнд-картой
+Тест-кейсы можно посмотреть [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI.postman_collection_For_Github.json)
