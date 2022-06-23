@@ -5,9 +5,10 @@
 ## Оглавление
 1. [Описание Проекта](#Описание-Проекта)
 2. [POST](#POST)
-    1. [GET /post](#GET-/post-(-Get-list-))
-    2. [Нумерованный](#Нумерованный)
-    3. [Смешанные списки](#Смешанные-списки)
+3. [Майнд-карта](#Майнд-карта)
+4. [Коллекция ручных тестов в Postman](#Коллекция-ручных-тестов-в-Postman)
+5. [Коллекция авто тестов в Postman](#Коллекция-авто-тестов-в-Postman)
+6. [Окружение](#Окружение)
 
 
 
@@ -86,8 +87,8 @@ owner: object(User Preview)
 
 Скачать коллекцию можно [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI.postman_collection_For_Github.json)
 
-## Коллекция авто-тестов в Postman
-Также были оформлены авто-тесты для проверки цикла GET/POST/PUT/DELETE
+## Коллекция авто тестов в Postman
+Также были оформлены авто тесты для проверки цикла GET/POST/PUT/DELETE
 
 Скачать коллекцию можно [тут](https://github.com/MrFabler/DummyAPI/blob/main/DummyAPI_Auto_Test.postman_collection_For_Github.json)
 
